@@ -29,9 +29,25 @@ rock.addEventListener("click", e => {
         NPC_choice = "Scissors"
         player_points = player_points + 1
     }
+    if (NPC_points == 5 || player_points == 5) {
+        document.getElementById("score").innerHTML = player_points+":"+NPC_points
+        if (NPC_points == 5) {
+            document.getElementById("message").innerHTML = "You lost" 
+            NPC_points = 0
+            player_points = 0
+        }
+        else {
+            document.getElementById("message").innerHTML = "You won!" 
+            NPC_points = 0
+            player_points = 0
+        }
+
+    }
+    else {
+
     document.getElementById("score").innerHTML = player_points+":"+NPC_points
     document.getElementById("message").innerHTML = "You chose "+player_choice+", they chose " + NPC_choice 
-
+    }
 }
     ) 
 
@@ -50,9 +66,25 @@ paper.addEventListener("click", e => {
         NPC_choice = "Scissors"
         NPC_points = NPC_points + 1
     }
+    if (NPC_points == 5 || player_points == 5) {
+        document.getElementById("score").innerHTML = player_points+":"+NPC_points
+        if (NPC_points == 5) {
+            document.getElementById("message").innerHTML = "You lost" 
+            NPC_points = 0
+            player_points = 0
+        }
+        else {
+            document.getElementById("message").innerHTML = "You won!" 
+            NPC_points = 0
+            player_points = 0
+        }
+
+    }
+    else {
+
     document.getElementById("score").innerHTML = player_points+":"+NPC_points
     document.getElementById("message").innerHTML = "You chose "+player_choice+", they chose " + NPC_choice 
-
+    }
 }
     ) 
 
@@ -70,9 +102,25 @@ scissors.addEventListener("click", e => {
     if (selection == 2) {
         NPC_choice = "Scissors"
     }
+    if (NPC_points == 5 || player_points == 5) {
+        document.getElementById("score").innerHTML = player_points+":"+NPC_points
+        if (NPC_points == 5) {
+            document.getElementById("message").innerHTML = "You lost" 
+            NPC_points = 0
+            player_points = 0
+        }
+        else {
+            document.getElementById("message").innerHTML = "You won!" 
+            NPC_points = 0
+            player_points = 0
+        }
+
+    }
+    else {
+
     document.getElementById("score").innerHTML = player_points+":"+NPC_points
     document.getElementById("message").innerHTML = "You chose "+player_choice+", they chose " + NPC_choice 
-
+    }
     
     }
         ) 
