@@ -81,7 +81,7 @@ paper.addEventListener("click", e => {
 
     }
     else {
-
+ b
     document.getElementById("score").innerHTML = player_points+":"+NPC_points
     document.getElementById("message").innerHTML = "You chose "+player_choice+", they chose " + NPC_choice 
     }
